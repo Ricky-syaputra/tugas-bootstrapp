@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Background Gradient */
+        body {
+            background: linear-gradient(135deg, #eff1f2 30%, #29404a 100%);
+            color: #121212;
+        }
+
+        /* Navbar Hover */
+        .nav-link:hover {
+            background-color: #e7639c;
+            color: white !important;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Box Shadow for Card */
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Image Hover Animation */
+        .img-fluid {
+            transition: transform 0.3s ease;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for Profile Image with Blue Background */
+        .profile-pic-container {
+            background-color: #7176db; /* Blue background */
+            color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+           
+        }
+
+        .profile-pic-container img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-user"></i> Profil Saya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user-circle"></i> Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-images"></i> Dokumentasi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Bagian Kiri: Informasi Pribadi -->
+            <div class="col-md-4">
+                <!-- Foto Profil -->
+                <div class="text-center mb-4">
+                    <div class="profile-pic-container">
+                        <img src="propil.jpg" class="rounded-circle img-fluid" alt="Foto Profil" width="200" height="200">
+                        <h1>RICKY SYAPUTRA</h1>
+                        <P>TUGAS PRGRAM WEB</P>
+                    </div>
+                </div>
+                <!-- Informasi Pribadi -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Informasi Pribadi</h5>
+                        <p><strong>Nama:</strong> Ricky Syaputra</p>
+                        <p><strong>NIM:</strong> 230209502086</p>
+                        <p><strong>Kelas:</strong> PTIKH</p>
+                        <p><strong>Alamat:</strong> Jl. Bontoduri Raya</p>
+                        <p><strong>Sekolah Asal:</strong> SMK Negeri Tapango Polman</p>
+                        <p><strong>Universitas:</strong> Universitas Negeri Makassar</p>
+                        <p><em><strong>Tetap Bernapas</strong></em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Kanan: Artikel -->
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h1 class="text-center">BETAPA INDAHNYA HIDUP DI DESA</h1>
+                        <hr>
+                        <p class="lead text-center">Hidup di desa dengan kesederhanaan menghadirkan ketenangan dan kedamaian yang sulit ditemukan di kota...</p>
+                        <p class="lead text-center">Meski hidup tanpa kemewahan, ada kebahagiaan yang datang dari hal-hal kecil seperti menikmati hasil panen sendiri...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabel dan Gambar -->
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Data Peserta</h2>
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Lengkap</th>
+                            <th>Panggilan</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Alamat</th>
+                            <th>Asal Sekolah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="alert('Anda mengklik data Ricky Syaputra!')">
+                            <td>1</td>
+                            <td>Ricky Syaputra</td>
+                            <td>Riki</td>
+                            <td>Laki-laki</td>
+                            <td>Mamaju</td>
+                            <td>SMKN Tapango</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Muh. Alif</td>
+                            <td>Alif</td>
+                            <td>Laki-laki</td>
+                            <td>Makassar</td>
+                            <td>SMAN 3 Makassar</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Mu. Makruf</td>
+                            <td>Mayor</td>
+                            <td>Laki-laki</td>
+                            <td>Mamaju</td>
+                            <td>SMA 3 Mamuju</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Galeri Gambar -->
+            <div class="col-md-6 text-center">
+                <h4>Dokumentasi Kegiatan</h4>
+                <img src="gambar1.png" class="img-fluid mb-3" alt="Gambar 1" onclick="showImage('gambar1.png')">
+                <img src="gambar2.png" class="img-fluid mb-3" alt="Gambar 2" onclick="showImage('gambar2.png')">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // Fungsi untuk menampilkan alert saat gambar diklik
+        function showImage(image) {
+            alert("Anda mengklik gambar: " + image);
+        }
+
+        // Event listener untuk link navbar
+        document.getElementById('profil-link').addEventListener('click', function() {
+            alert("Anda mengklik Profil Saya");
+        });
+
+        document.getElementById('beranda-link').addEventListener('click', function() {
+            alert("Anda mengklik Beranda");
+        });
+    </script>
+</body>
+</html>
